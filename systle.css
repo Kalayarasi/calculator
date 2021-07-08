@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Festive&family=Mate+SC&display=swap');
+body{
+    margin: 0;
+    background: linear-gradient(to right, #53a9ac, #ec6ead);
+    font-family: 'Cookie', cursive;
+    font-family: 'Festive', cursive;
+    font-family: 'Mate SC', serif;
+}
+h2{
+   margin-top: 0;
+   padding: 0;
+   top:0;
+   font-size: 30px;
+   display: block;
+   text-align: center;
+   color:honeydew;
+   font-weight: 700;
+   text-decoration: underline;
+   animation-duration: 3s;
+   animation-name: slidein;
+}
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+}
+  
+h2 i{
+    padding: 1%;
+    
+}
+.container{
+    text-align: center;
+    margin-top: 10px;
+    width: 1100px;
+    margin: auto;
+    height: 550px;
+    position: relative;
+    background:url(c1.jpg);
+}
+#cals{
+    margin: auto;
+    top:30px;
+    position: relative;
+    border-radius: 10px;
+    width:35%;
+    height: 91%;
+    background:whitesmoke;
+    box-shadow:0 0 1px 1px black;
+}
+#result{
+    height: 100px;
+}
+#keyboard{
+   height: 400px;
+}
+#history-value{
+    text-align: right;
+    height: 20px;
+    margin: 0 30px;
+    padding-top: 20px;
+    font-size: 20px;
+    color:rgb(83, 83, 83);
+    display: block;
+    text-decoration: underline;
+}
+#output-value{
+    text-align: right;
+    height: 50px;
+    margin: 10px 20px;
+    font-size: 35px;
+}
+.operator, .number,.empty{
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    float: left;
+    border-radius: 20px;
+    border-width:0;
+    font-size: 18px;
+    font-weight: bold;
+}
+.number, .empty{
+    background-color:whitesmoke;
+}
+.number,.operator{
+    cursor: pointer;
+}
+.number:hover{
+    background:grey;
+    opacity: 50%;
+}
+.operator:hover{
+    background: gainsboro;
+    opacity: 50%;
+}
+.operator:active,.number:active{
+    font-size:13px;
+}
+button:nth-child(4){
+    font-size: 25px;
+    background-color: #20b2aa;
+    opacity: 50%;
+}
+button:nth-child(8){
+    font-size: 25px;
+    background-color: #ffa500;
+    opacity: 80%;
+}
+button:nth-child(12){
+    font-size: 25px;
+    background-color: #f08080;
+    opacity: 80%;
+}
+button:nth-child(16){
+    font-size: 25px;
+    background-color: #7d93e0;
+    opacity: 80%;
+}
+button:nth-child(20){
+    font-size: 25px;
+    background-color: #9477af;
+    opacity: 80%;
+}
+footer{
+    text-align: center;
+    color: black;
+    margin-bottom: 10px;
+    position: relative;
+    bottom: 20px;
+   
+}
+footer i{
+    color: rgb(228, 56, 56);
+    font-size: 20px;
+    font-weight: 200;
+    padding:5px;
+}
+@media only screen and (max-width:1143px) {
+   .container{
+       height:800px;
+       width: 1000px;
+       font-size: 20px;
+       font-weight: 600;
+   }
+}
+@media only screen and (max-width:1000px) {
+   .container{
+    height:800px;
+    width: 950px;
+}
+.cals{
+    font-size:50px;
+    background: teal;
+    height:600px;
+}
+@media only screen and (max-width:800px) {
+    .container{
+     height:889px;
+     width: 950px;
+ }
+ .cals{
+     font-size:50px;
+     height:600px;
+ }
+}
